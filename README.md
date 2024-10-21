@@ -1,44 +1,44 @@
-# BOP GAMES - Sistema de Gestão da Volta de Ciclismo
+# BOP GAMES - Cycling Tour Management System
 
-## Autores
+## Authors
+This project was developed by **Kayque Allan** and **Davi Vinicius** as part of a Modular Programming assignment at PUC Minas University in Belo Horizonte, Coração Eucarístico.
 
-Este projeto foi desenvolvido por **Kayque Allan** e **Davi Vinicius** como parte de um trabalho de Programação Modular na faculdade PUC Minas de Belo Horizonte, Coração Eucarístico.
+## Project Description
+The BOP GAMES project is an implementation of a system to manage the cycling event of a multi-sport competition in Latin America. The main focus is to register and track the performances of cyclists across 21 sequential stages, determining the winner based on the lowest total time spent.
 
-## Descrição do Projeto
+## Main Features
+- **Cyclist Registration**: Each cyclist has a name, identification number, and city of origin. The system stores data about the 21 stages that each cyclist participates in.
 
-O projeto BOP GAMES é uma implementação de um sistema para gerenciar a modalidade de ciclismo de um evento multiesportivo da América Latina. O foco principal é registrar e acompanhar as performances dos ciclistas em 21 etapas sequenciais, determinando o vencedor com base no menor tempo total gasto.
+- **Stage Management**: Each stage is registered with a number, date, start time, and duration. This allows for detailed tracking of each cyclist's performance.
 
-## Funcionalidades Principais
+- **Comparison between Cyclists**: The system allows for comparison between two cyclists, identifying who finished ahead in the competition and calculating the time difference in minutes and seconds.
 
-- **Registro de Ciclistas**: Cada ciclista possui um nome, número de identificação e cidade de origem. O sistema armazena dados sobre as 21 etapas que cada ciclista participa.
+- **Results of Specific Stages**: It is possible to check who won a specific stage between two cyclists, providing a more granular analysis of performance.
 
-- **Gestão das Etapas**: Cada etapa é registrada com um número, data, hora inicial e duração. Isso permite um acompanhamento detalhado do desempenho de cada ciclista.
+## Project Structure
+The project utilizes an object-oriented approach, implementing the following main classes:
 
-- **Comparação entre Ciclistas**: O sistema permite comparar dois ciclistas, identificando quem terminou à frente na competição e calculando a diferença de tempo em minutos e segundos.
+- **Cyclist**: Represents the cyclists and contains methods for calculating total time, adding stages, and comparing cyclists.
 
-- **Resultados de Etapas Específicas**: É possível verificar quem venceu uma etapa específica entre dois ciclistas, proporcionando uma análise mais granular do desempenho.
+- **Stage**: Represents each of the 21 stages, storing information about the date, time, and durations for cyclists.
 
-## Estrutura do Projeto
+- **Duration**: A helper class that represents duration in a structured way, allowing operations such as addition and time difference.
 
-O projeto utiliza uma abordagem orientada a objetos, implementando as seguintes classes principais:
+- **Hour**: A class that facilitates the manipulation of time, storing hours, minutes, and seconds.
 
-- **Ciclista**: Representa os ciclistas e contém métodos para calcular o tempo total, adicionar etapas e comparar ciclistas.
+- **Date**: A class that represents dates with day, month, and year.
 
-- **Etapa**: Representa cada uma das 21 etapas, armazenando informações sobre data, hora e durações para ciclistas.
+## Unit Tests
+Unit tests have been implemented to ensure the correct functionality of the methods, including:
 
-- **Duracao**: Classe auxiliar que representa a duração de forma estruturada, permitindo operações como soma e diferença de tempos.
+- Calculating the time difference between cyclists.
+- Verifying who won in specific stages.
 
-- **Hora**: Classe que facilita a manipulação de horários, armazenando horas, minutos e segundos.
+## Test Examples
+- **CyclistTest**: Tests the creation of cyclists and the addition of stages.
 
-- **Data**: Classe que representa datas com dia, mês e ano.
+## UML Diagram
+A UML diagram has been created to represent the structure and relationships of the classes in the system.
 
-## Testes Unitários
-
-Testes unitários foram implementados para garantir a correta funcionalidade dos métodos, incluindo:
-
-- Cálculo da diferença de tempo entre ciclistas.
-- Verificação de quem venceu em etapas específicas.
-
-### Exemplos de Testes
-
-- **CiclistaTest**: Testa a criação de ciclistas e a adição de etapas.
+## Video
+A demonstration video has been produced, showcasing the UML diagram, the source code, and the tests conducted.
